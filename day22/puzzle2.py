@@ -17,15 +17,6 @@ def parse_decks(data):
     return decks
 
 
-def deck_equals(deck1, deck2):
-    if len(deck1) != len(deck2):
-        return False
-    for index, card1 in enumerate(deck1):
-        if card1 != deck2[index]:
-            return False
-    return True
-
-
 def simulate_game(decks):
     configurations = []
     while len(decks[0]) > 0 and len(decks[1]) > 0:
